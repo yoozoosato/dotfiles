@@ -11,6 +11,13 @@ setopt  HIST_IGNORE_DUPS
 setopt hist_ignore_space
 setopt  CORRECT CORRECT_ALL
 
+# completion
+autoload -U compinit
+compinit 
+
+# auto cd
+setopt auto_cd
+
 # prompt settings
 autoload -U colors
 colors
@@ -45,7 +52,7 @@ alias mkdir='nocorrect mkdir'
 alias restartfinder='killall Dock'
 #alias ssh='ssh -o ServerAliveInterval=60'
 
-# load ssh-command aliases
+# load ssh-comanmd aliases
 [ -f $HOME/.zshrc.alias ] && source $HOME/.zshrc.alias
 
 # for rvm (Ruby Versin Manager)
