@@ -10,6 +10,7 @@ SAVEHIST=200000
 setopt  HIST_IGNORE_DUPS
 setopt hist_ignore_space
 setopt  CORRECT CORRECT_ALL
+setopt list_packed 
 
 # completion
 autoload -U compinit
@@ -17,6 +18,11 @@ compinit
 
 # auto cd
 setopt auto_cd
+setopt auto_pushd 
+
+# predict
+autoload predict-on
+predict-on
 
 # prompt settings
 autoload -U colors
