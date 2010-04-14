@@ -61,5 +61,8 @@ alias restartfinder='killall Dock'
 # load ssh-comanmd aliases
 [ -f $HOME/.zshrc.alias ] && source $HOME/.zshrc.alias
 
+# load host specific settings
+[ -f $HOME/.zshrc.mine ] && source $HOME/.zshrc.mine
+
 # for rvm (Ruby Versin Manager)
 if [[ -s /Users/yz/.rvm/scripts/rvm ]] ; then source /Users/yz/.rvm/scripts/rvm ; fi
