@@ -58,9 +58,6 @@ alias mkdir='nocorrect mkdir'
 alias restartfinder='killall Dock'
 #alias ssh='ssh -o ServerAliveInterval=60'
 
-# load ssh-comanmd aliases
-[ -f $HOME/.zshrc.alias ] && source $HOME/.zshrc.alias
-
 # load host specific settings
 [ -f $HOME/.zshrc.mine ] && source $HOME/.zshrc.mine
 
