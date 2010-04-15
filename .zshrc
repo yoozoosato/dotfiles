@@ -21,8 +21,8 @@ setopt auto_cd
 setopt auto_pushd 
 
 # predict
-autoload predict-on
-predict-on
+#autoload predict-on
+#predict-on
 
 # prompt settings
 autoload -U colors
