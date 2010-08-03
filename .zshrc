@@ -30,16 +30,6 @@ colors
 PROMPT="%{${fg[white]}%}%m%{${fg[white]}%}%#%{$reset_color%} "
 RPROMPT=" %/:$WINDOW"
 
-# PATH
-export PATH=$PATH:/opt/local/bin:~/bin:$HOME/bin/apache-tomcat-6.0.26/bin
-
-# for perl5.8.8
-#export PATH=$HOME/local/bin:$PATH
-#export PERL5LIB=$HOME/local/lib/perl5/5.8.8:$HOME/local/lib/perl5/site_perl/5.8.8:$HOME/local/share/perl/5.8.8
-
-# for ruby
-export RI="--format bs --width 70"
-
 # editor
 export EDITOR=vi
 
@@ -61,5 +51,3 @@ alias restartfinder='killall Dock'
 # load host specific settings
 [ -f $HOME/.zshrc.mine ] && source $HOME/.zshrc.mine
 
-# for rvm (Ruby Versin Manager)
-if [[ -s /Users/yz/.rvm/scripts/rvm ]] ; then source /Users/yz/.rvm/scripts/rvm ; fi
