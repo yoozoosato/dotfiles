@@ -7,10 +7,13 @@ bindkey -e
 HISTFILE=~/.zhistory
 HISTSIZE=100000
 SAVEHIST=200000
+setopt share_history
 setopt  HIST_IGNORE_DUPS
 setopt hist_ignore_space
-setopt  CORRECT CORRECT_ALL
 setopt list_packed 
+
+# correction 
+setopt  CORRECT CORRECT_ALL
 
 # completion
 autoload -U compinit
