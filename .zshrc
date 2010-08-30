@@ -51,6 +51,9 @@ alias mkdir='nocorrect mkdir'
 alias restartfinder='killall Dock'
 #alias ssh='ssh -o ServerAliveInterval=60'
 
+# LANG
+export LANG=ja_JP.UTF-8
+
 # load host specific settings
 [ -f $HOME/.zshrc.mine ] && source $HOME/.zshrc.mine
 
