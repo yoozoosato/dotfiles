@@ -36,6 +36,12 @@ RPROMPT=" %/:$WINDOW"
 # editor
 export EDITOR=vi
 
+# screen 
+SCREEN=`which screen`
+if [ $SHLVL = 1 ];then
+$SCREEN
+fi
+
 # aliases
 #alias ls='ls --color=auto --show-control-chars'
 alias ll='ls -l'
