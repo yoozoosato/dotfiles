@@ -1,12 +1,18 @@
+# キーを z にする
 escape ^Zz
 termcap kterm hs@
 terminfo kterm hs@
 termcapinfo xterm 'is=\E[r\E[m\E[2J\E[H\E[?7h\E[?1;4;6l' 
 shell -$SHELL
 startup_message off
+
+# 最下段に常にウインドウ一覧を表示。表示項目をカスタマイズ
 hardstatus alwayslastline "[%02c] %`%-w%{=b bw}%n %t%{-}%+w"
 idle 1200
 termcap  facit|vt100|xterm LP:G0
 terminfo facit|vt100|xterm LP:G0
 term xterm-256color 
 defscrollback 10000
+
+#　ウィンドウリストを表示する
+bind w windowlist -b
