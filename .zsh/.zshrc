@@ -6,15 +6,27 @@ source $ZDOTDIR/.zaliases
 # Emacs like key bind. Vi like bind is 'bindkey -v'
 bindkey -e
 
+######################################################################
 # history
+#
+######################################################################
+# size
 HISTFILE=~/.zhistory
 HISTSIZE=500000
 SAVEHIST=500000
+
+# options
+# share history file
 setopt share_history
-# not record duplicate command into history file
-setopt HIST_IGNORE_DUPS
+# do not record duplicate command into history file
+setopt hist_ignore_dups
+# delete same old command from history file
+setopt hist_ignore_all_dups
 # if the first character on the line is blank, don't save the command
 setopt hist_ignore_space
+# do not record 'history' command into history file
+setopt hist_no_store
+
 
 # this is not related to history. i'll move this.
 setopt list_packed
@@ -26,9 +38,14 @@ setopt  CORRECT CORRECT_ALL
 autoload -U compinit
 compinit
 
-# auto cd
+######################################################################
+# change directory
+#
+######################################################################
 setopt auto_cd
 setopt auto_pushd
+# delete same old directory from directory stack
+setopt pushd_ignore_dups
 
 # predict
 #autoload predict-on
