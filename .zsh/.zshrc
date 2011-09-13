@@ -1,5 +1,8 @@
 # .zshrc
 
+# aliases
+source $ZDOTDIR/.zaliases
+
 # Emacs like key bind. Vi like bind is 'bindkey -v'
 bindkey -e
 
@@ -46,21 +49,6 @@ SCREEN=`which screen`
 if [ $SHLVL = 1 ];then
 $SCREEN
 fi
-
-# aliases
-#alias ls='ls --color=auto --show-control-chars'
-alias ll='ls -l'
-alias la='ls -aF'
-alias rm='rm -i'
-alias cp='cp -i'
-alias vi='vim'
-alias rm='nocorrect rm'
-alias mv='nocorrect mv'
-alias cp='nocorrect cp'
-alias spec='nocorrect spec'
-alias mkdir='nocorrect mkdir'
-alias restartfinder='killall Dock'
-#alias ssh='ssh -o ServerAliveInterval=60'
 
 # LANG
 export LANG=ja_JP.UTF-8
