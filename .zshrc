@@ -5,10 +5,10 @@ bindkey -e
 
 # history
 HISTFILE=~/.zhistory
-HISTSIZE=100000
-SAVEHIST=200000
+HISTSIZE=500000
+SAVEHIST=500000
 setopt share_history
-setopt  HIST_IGNORE_DUPS
+setopt HIST_IGNORE_DUPS
 setopt hist_ignore_space
 setopt list_packed 
 
