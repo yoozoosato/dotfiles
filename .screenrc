@@ -7,12 +7,12 @@ shell -$SHELL
 startup_message off
 
 # ステータスラインに表示するヤツ
-backtick 1 0 30 $HOME/.screen/batteryInfo.sh
-backtick 2 0 5 $HOME/.screen/memory_usage
+#backtick 1 0 30 $HOME/.screen/batteryInfo.sh
+#backtick 2 0 5 $HOME/.screen/memory_usage
 
 # 最下段に常にウインドウ一覧を表示。表示項目をカスタマイズ
 # hardstatus alwayslastline "[%02c]Load:%=%1`Memory:%=%2`"
-hardstatus alwayslastline "[%Y/%m/%d %02c:%s] %{=b kc}LoadAvarage:%{-} %l %{=b kc}Memory:%{-}%2`%% %{=b kc}Battery:%{-} %1`;"
+#hardstatus alwayslastline "[%Y/%m/%d %02c:%s] %{=b kc}LoadAvarage:%{-} %l %{=b kc}Memory:%{-}%2`%% %{=b kc}Battery:%{-} %1`;"
 
 # caption
 caption always "%-w%{=b bw}%n %t%{-}%+w"
@@ -26,3 +26,6 @@ defscrollback 10000
 
 #　ウィンドウリストを表示する
 bind w windowlist -b
+
+# load machine specific file.
+source ./.screenrc.mine
