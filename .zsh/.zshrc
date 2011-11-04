@@ -138,9 +138,6 @@ function vcs_info_with_color() {
 }
 RPROMPT='[%~]$(vcs_info_with_color)'
 
-# rvm settings
-if [[ -s /Users/yz/.rvm/scripts/rvm ]] ; then source /Users/yz/.rvm/scripts/rvm ; fi
-
 ######################################################################
 # emacs & zsh (dired, cde)
 ######################################################################
