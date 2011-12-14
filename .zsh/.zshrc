@@ -64,7 +64,7 @@ export EDITOR=$EMACSCLIENT
 # screen
 SCREEN=`which screen`
 if [ $SHLVL = 1 ];then
-$SCREEN
+$SCREEN -U
 fi
 
 # LANG
