@@ -3,3 +3,4 @@ ln -s $HOME/dotfiles/.screenrc $HOME/.screenrc
 ln -s $HOME/dotfiles/.zshenv $HOME/.zshenv
 #ln -s $HOME/dotfiles/.zshrc $HOME/.zshrc
 #ln -s $HOME/dotfiles/.zsh $HOME/.zsh
+ln -s $HOME/dotfiles/.gemrc $HOME/.gemrc
