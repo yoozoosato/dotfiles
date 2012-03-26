@@ -58,8 +58,8 @@ colors
 PROMPT="%{${fg[white]}%}%m%{${fg[white]}%}%#%{$reset_color%} "
 
 # editor
-EMACSCLIENT=`which emacsclient`
-export EDITOR=$EMACSCLIENT
+#EMACSCLIENT=`which emacsclient`
+#export EDITOR=$EMACSCLIENT
 
 # screen
 SCREEN=`which screen`
