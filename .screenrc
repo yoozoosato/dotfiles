@@ -17,6 +17,8 @@ startup_message off
 # caption
 caption always "%-w%{=b bw}%n %t%{-}%+w"
 
+# http://d.hatena.ne.jp/edvakf/20110311/1299793959
+altscreen on
 
 idle 1200
 termcap  facit|vt100|xterm LP:G0
