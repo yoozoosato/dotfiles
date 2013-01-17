@@ -56,6 +56,7 @@ autoload -Uz colors
 colors
 # left prompt. Hostname only.
 PROMPT="%{${fg[white]}%}%m%{${fg[white]}%}%#%{$reset_color%} "
+setopt transient_rprompt
 
 # editor
 #EMACSCLIENT=`which emacsclient`
