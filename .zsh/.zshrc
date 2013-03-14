@@ -1,5 +1,8 @@
 # .zshrc
 
+# load host specific settings
+[ -f $HOME/.zshrc.mine ] && source $HOME/.zshrc.mine
+
 # aliases
 source $ZDOTDIR/.zaliases
 
@@ -163,6 +166,3 @@ function cde () {
 }
 ######################################################################
 
-
-# load host specific settings
-[ -f $HOME/.zshrc.mine ] && source $HOME/.zshrc.mine
