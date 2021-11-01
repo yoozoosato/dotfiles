@@ -24,7 +24,7 @@ idle 1200
 termcap  facit|vt100|xterm LP:G0
 terminfo facit|vt100|xterm LP:G0
 term xterm-256color 
-defscrollback 10000
+defscrollback 1000000
 
 #　ウィンドウリストを表示する
 bind w windowlist -b
