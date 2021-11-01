@@ -1,26 +1,10 @@
-source ~/.zplug/init.zsh
-
+### PATH
 # macports
 PATH=$PATH:/opt/local/bin
 # mew
 PATH=$PATH:/Applications/Emacs.app/Contents/MacOS/bin
 # migemo
 PATH=$PATH:/usr/local/bin
-
-# recommended plugins from http://post.simplie.jp/posts/59
-zplug 'zsh-users/zsh-autosuggestions'
-zplug 'zsh-users/zsh-completions'
-zplug 'zsh-users/zsh-syntax-highlighting'
-zplug 'plugins/git', from:oh-my-zsh
-zplug 'yous/lime'
-
-if ! zplug check --verbose; then
-	printf 'Install? [y/N]: '
-	if read -q; then
-		echo; zplug install
-	fi
-fi
-zplug load 
 
 # launch screen
 SCREEN=`which screen`
@@ -74,11 +58,11 @@ source $HOME/.zaliases
 ###
 # ここから下は Perl 用
 ###
-PATH="/Users/yozo.sato/perl5/bin${PATH:+:${PATH}}"; export PATH;
-PERL5LIB="/Users/yozo.sato/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"; export PERL5LIB;
-PERL_LOCAL_LIB_ROOT="/Users/yozo.sato/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_ROOT}}"; export PERL_LOCAL_LIB_ROOT;
-PERL_MB_OPT="--install_base \"/Users/yozo.sato/perl5\""; export PERL_MB_OPT;
-PERL_MM_OPT="INSTALL_BASE=/Users/yozo.sato/perl5"; export PERL_MM_OPT;
+PATH="$HOME/perl5/bin${PATH:+:${PATH}}"; export PATH;
+PERL5LIB="$HOME/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"; export PERL5LIB;
+PERL_LOCAL_LIB_ROOT="$HOME/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_ROOT}}"; export PERL_LOCAL_LIB_ROOT;
+PERL_MB_OPT="--install_base \"$HOME/perl5\""; export PERL_MB_OPT;
+PERL_MM_OPT="INSTALL_BASE=$HOME/perl5"; export PERL_MM_OPT;
 export LC_ALL=en_US.UTF-8
 
 ###
@@ -93,7 +77,6 @@ PATH=$PATH:~/Library/Python/2.7/bin
   export PATH=${HOME}/.rbenv/bin:${PATH} && \
   eval "$(rbenv init -)"
 
-
 ###
 # pyenv
 ###
@@ -102,4 +85,4 @@ export PATH="$PYENV_ROOT/bin:$PATH"
 if command -v pyenv 1>/dev/null 2>&1; then
   eval "$(pyenv init -)"
 fi
-export PATH="${PATH}:/Users/yozo.sato/.local/bin"
+export PATH="${PATH}:$HOME/.local/bin"
