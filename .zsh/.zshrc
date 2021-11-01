@@ -152,7 +152,7 @@ export PATH=$PATH:$HOME/bin
 
 
 ### aliases
-source $HOME/.zaliases
+source $HOME/.zsh/.zaliases
 
 ###
 # ここから下は Perl 用
