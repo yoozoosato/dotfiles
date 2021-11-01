@@ -4,6 +4,8 @@ source ~/.zplug/init.zsh
 PATH=$PATH:/opt/local/bin
 # mew
 PATH=$PATH:/Applications/Emacs.app/Contents/MacOS/bin
+# migemo
+PATH=$PATH:/usr/local/bin
 
 # recommended plugins from http://post.simplie.jp/posts/59
 zplug 'zsh-users/zsh-autosuggestions'
