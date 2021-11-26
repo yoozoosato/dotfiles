@@ -15,3 +15,8 @@ fi
 if [ ! -e $HOME/.zsh/.zaliases ]; then
 	ln -s $HOME/dotfiles/.zsh/.zaliases $HOME/.zsh/.zaliases
 fi
+
+# 以下、 .tigrc 用。利用頻度が magit より高いので
+if [ ! -e $HOME/.tigrc ]; then
+	ln -s $HOME/dotfiles/.tigrc $HOME/.tigrc
+fi
