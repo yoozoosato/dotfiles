@@ -185,3 +185,10 @@ if command -v pyenv 1>/dev/null 2>&1; then
   eval "$(pyenv init -)"
 fi
 export PATH="${PATH}:$HOME/.local/bin"
+
+
+
+###
+# machine specific configurations
+###
+source ~/.zsh/.zshrc_mine
