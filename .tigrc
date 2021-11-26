@@ -1,0 +1,2 @@
+# commit ID が知りたい
+set main-view = id date author commit-title:graph=yes,refs=yes
